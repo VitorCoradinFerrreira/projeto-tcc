@@ -1,0 +1,14 @@
+[
+  "pos_ADP",
+  "digit_ratio",
+  "ent_DATE",
+  "pos_AUX",
+  "dep_nsubj",
+  "pos_PROPN",
+  "stop_ratio",
+  "entity_ratio",
+  "ent_GPE",
+  "pos_NUM",
+  "avg_sentence_len",
+  "ent_ORG"
+]

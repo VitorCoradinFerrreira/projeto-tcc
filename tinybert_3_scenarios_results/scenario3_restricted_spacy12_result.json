@@ -1,0 +1,130 @@
+{
+  "experiment": "scenario3_restricted_spacy12",
+  "seed": 42,
+  "train_size": 1447,
+  "validation_size": 311,
+  "test_size": 311,
+  "train_synthetic_count": 0,
+  "train_synthetic_share": 0.0,
+  "use_spacy_features": true,
+  "spacy_feature_names": [
+    "pos_ADP",
+    "digit_ratio",
+    "ent_DATE",
+    "pos_AUX",
+    "dep_nsubj",
+    "pos_PROPN",
+    "stop_ratio",
+    "entity_ratio",
+    "ent_GPE",
+    "pos_NUM",
+    "avg_sentence_len",
+    "ent_ORG"
+  ],
+  "spacy_feature_dim": 12,
+  "spacy_projection_dim": 16,
+  "test_accuracy": 0.9131832797427653,
+  "test_macro_f1": 0.8831451457247637,
+  "test_weighted_f1": 0.9136372945669032,
+  "classification_report": {
+    "negative": {
+      "precision": 0.7857142857142857,
+      "recall": 0.868421052631579,
+      "f1-score": 0.825,
+      "support": 38.0
+    },
+    "neutral": {
+      "precision": 0.9479166666666666,
+      "recall": 0.9430051813471503,
+      "f1-score": 0.9454545454545454,
+      "support": 193.0
+    },
+    "positive": {
+      "precision": 0.8961038961038961,
+      "recall": 0.8625,
+      "f1-score": 0.8789808917197452,
+      "support": 80.0
+    },
+    "accuracy": 0.9131832797427653,
+    "macro avg": {
+      "precision": 0.8765782828282829,
+      "recall": 0.8913087446595765,
+      "f1-score": 0.8831451457247637,
+      "support": 311.0
+    },
+    "weighted avg": {
+      "precision": 0.9147696823540874,
+      "recall": 0.9131832797427653,
+      "f1-score": 0.9136372945669032,
+      "support": 311.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      33,
+      4,
+      1
+    ],
+    [
+      4,
+      182,
+      7
+    ],
+    [
+      5,
+      6,
+      69
+    ]
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.9586485414714604,
+      "val_loss": 0.6552631855010986,
+      "val_accuracy": 0.6752411575562701,
+      "val_macro_f1": 0.6675246684260956,
+      "val_weighted_f1": 0.6826573263645865
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4952045620142759,
+      "val_loss": 0.43326173536479473,
+      "val_accuracy": 0.8263665594855305,
+      "val_macro_f1": 0.8034627258562456,
+      "val_weighted_f1": 0.8307477202886954
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3488636670613682,
+      "val_loss": 0.39450885243713857,
+      "val_accuracy": 0.8906752411575563,
+      "val_macro_f1": 0.8623281935070694,
+      "val_weighted_f1": 0.8913586892041157
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.25491736141534954,
+      "val_loss": 0.3473540686070919,
+      "val_accuracy": 0.8681672025723473,
+      "val_macro_f1": 0.8537330671051602,
+      "val_weighted_f1": 0.8707568090989911
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.21036102825386838,
+      "val_loss": 0.33740472523495557,
+      "val_accuracy": 0.8842443729903537,
+      "val_macro_f1": 0.8660259364047477,
+      "val_weighted_f1": 0.8861020674680208
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.18293010794485992,
+      "val_loss": 0.3479463688097894,
+      "val_accuracy": 0.8906752411575563,
+      "val_macro_f1": 0.8733969468546227,
+      "val_weighted_f1": 0.8924294910759639
+    }
+  ],
+  "model_path": "tinybert_3_scenarios_results\\scenario3_restricted_spacy12.pt"
+}

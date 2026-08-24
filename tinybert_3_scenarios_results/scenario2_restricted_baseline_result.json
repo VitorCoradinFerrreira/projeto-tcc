@@ -1,0 +1,117 @@
+{
+  "experiment": "scenario2_restricted_baseline",
+  "seed": 42,
+  "train_size": 1447,
+  "validation_size": 311,
+  "test_size": 311,
+  "train_synthetic_count": 0,
+  "train_synthetic_share": 0.0,
+  "use_spacy_features": false,
+  "spacy_feature_names": [],
+  "spacy_feature_dim": 0,
+  "spacy_projection_dim": 0,
+  "test_accuracy": 0.909967845659164,
+  "test_macro_f1": 0.8808027923211169,
+  "test_weighted_f1": 0.9107228834531405,
+  "classification_report": {
+    "negative": {
+      "precision": 0.7857142857142857,
+      "recall": 0.868421052631579,
+      "f1-score": 0.825,
+      "support": 38.0
+    },
+    "neutral": {
+      "precision": 0.9523809523809523,
+      "recall": 0.9326424870466321,
+      "f1-score": 0.9424083769633508,
+      "support": 193.0
+    },
+    "positive": {
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1-score": 0.875,
+      "support": 80.0
+    },
+    "accuracy": 0.909967845659164,
+    "macro avg": {
+      "precision": 0.871031746031746,
+      "recall": 0.892021179892737,
+      "f1-score": 0.8808027923211169,
+      "support": 311.0
+    },
+    "weighted avg": {
+      "precision": 0.9121114683815648,
+      "recall": 0.909967845659164,
+      "f1-score": 0.9107228834531405,
+      "support": 311.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      33,
+      4,
+      1
+    ],
+    [
+      4,
+      180,
+      9
+    ],
+    [
+      5,
+      5,
+      70
+    ]
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.9149569476043785,
+      "val_loss": 0.5794098764657974,
+      "val_accuracy": 0.752411575562701,
+      "val_macro_f1": 0.7072125995374049,
+      "val_weighted_f1": 0.7577977810626448
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4554712692132363,
+      "val_loss": 0.41005999967455864,
+      "val_accuracy": 0.8617363344051447,
+      "val_macro_f1": 0.8260754622361764,
+      "val_weighted_f1": 0.8639588549369785
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3386098386330919,
+      "val_loss": 0.4204673323780298,
+      "val_accuracy": 0.7877813504823151,
+      "val_macro_f1": 0.7840094592495728,
+      "val_weighted_f1": 0.7933681569324765
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.29455784593637174,
+      "val_loss": 0.3806473268195987,
+      "val_accuracy": 0.8585209003215434,
+      "val_macro_f1": 0.8470195304210569,
+      "val_weighted_f1": 0.8614655988987773
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.258355383658884,
+      "val_loss": 0.35237586330622434,
+      "val_accuracy": 0.8681672025723473,
+      "val_macro_f1": 0.8526354707293935,
+      "val_weighted_f1": 0.8706451270804364
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.1808444573288108,
+      "val_loss": 0.35157678024843336,
+      "val_accuracy": 0.8842443729903537,
+      "val_macro_f1": 0.8674308157158132,
+      "val_weighted_f1": 0.8861766755049127
+    }
+  ],
+  "model_path": "tinybert_3_scenarios_results\\scenario2_restricted_baseline.pt"
+}
